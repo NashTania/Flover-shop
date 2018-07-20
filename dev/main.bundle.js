@@ -14781,6 +14781,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./src/css/style.scss":
+/*!****************************!*\
+  !*** ./src/css/style.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./src/css/styles.css":
 /*!****************************!*\
   !*** ./src/css/styles.css ***!
@@ -15153,12 +15164,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(underscore__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/styles.css */ "./src/css/styles.css");
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _js_cart_cart_model_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/cart/cart-model.js */ "./src/js/cart/cart-model.js");
-/* harmony import */ var _js_cart_cart_view_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/cart/cart-view.js */ "./src/js/cart/cart-view.js");
-/* harmony import */ var _js_cart_cart_collection_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/cart/cart-collection.js */ "./src/js/cart/cart-collection.js");
-/* harmony import */ var _js_products_products_collection_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/products/products-collection.js */ "./src/js/products/products-collection.js");
-/* harmony import */ var _js_products_products_model_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../js/products/products-model.js */ "./src/js/products/products-model.js");
-/* harmony import */ var _js_products_products_view_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/products/products-view.js */ "./src/js/products/products-view.js");
+/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/style.scss */ "./src/css/style.scss");
+/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _js_cart_cart_model_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/cart/cart-model.js */ "./src/js/cart/cart-model.js");
+/* harmony import */ var _js_cart_cart_view_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/cart/cart-view.js */ "./src/js/cart/cart-view.js");
+/* harmony import */ var _js_cart_cart_collection_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/cart/cart-collection.js */ "./src/js/cart/cart-collection.js");
+/* harmony import */ var _js_products_products_collection_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../js/products/products-collection.js */ "./src/js/products/products-collection.js");
+/* harmony import */ var _js_products_products_model_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../js/products/products-model.js */ "./src/js/products/products-model.js");
+/* harmony import */ var _js_products_products_view_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../js/products/products-view.js */ "./src/js/products/products-view.js");
 //tatiana_tkachenko_FD2_flover_shop_products'
 //https://fe.it-academy.by/AjaxStringStorage2.php
 /*$(document).ready(function() {
@@ -15171,7 +15184,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import styles from '../css/style.scss';
+
 
 
 

@@ -10,7 +10,7 @@ import $ from 'jquery';
 import Backbone from 'backbone';
 import Underscore from 'underscore';
 import css from '../css/styles.css';
-//import styles from '../css/style.scss';
+import styles from '../css/style.scss';
 import CartProduct from '../js/cart/cart-model.js';
 import CartList from '../js/cart/cart-view.js';
 import CartCollection from '../js/cart/cart-collection.js';

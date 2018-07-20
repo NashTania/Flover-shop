@@ -2,7 +2,7 @@ const path = require('path');
 const $ = require("jquery");
 const webpack = require('webpack');
 const _ = require('underscore');
-//const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: './src/js/script.js',
@@ -38,26 +38,33 @@ module.exports = {
             }
           }
         ]
-      }/*, {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader, {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoader: 2
+      }, {
+        test: /\.(sass|scss)$/,
+        include: path.resolve(__dirname, 'src/css'),
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: "css-loader",
+              options: {
+                sourceMap: true,
+                minimize: true,
+                url: false
+              }
+            }, {
+              loader: "sass-loader",
+              options: {
+                sourceMap: true
+              }
             }
-          },
-          "sass-loader"
-        ]
-      }*/
+          ]
+        })
+      }
     ]
   },
   plugins: [
     new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery"}),
     new webpack.ProvidePlugin({_: 'underscore'}),
-    //new MiniCssExtractPlugin({filename: "style.css", chunkFilename: "[name].css"})
+    new ExtractTextPlugin({filename: './css/style.bundle.css', allChunks: true})
   ]
 
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html land='en'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Flovers shop</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|PT+Sans" rel="stylesheet">
+  <!--<script type="text/javascript" src="./dist/main.bundle.js"></script>-->
+  <script type="text/javascript" src="./dev/main.bundle.js"></script>
+    <!--<script type="text/javascript" src="./dev/main.bundle.js.map"></script>-->
+  <!--<link type="text/css" rel="stylesheet" href="./src/css/styles.css" />-->
+  <script type='text/javascript' src='./src/js/lib/underscore.js'></script>
+  <!--<script type='text/javascript' src='./src/js/lib/jquery.js'></script>-->
+  <!--<script type='text/javascript' src='./src/js/lib/backbone.js'></script>-->
+  <!--<script type="text/javascript" src="./src/js/script.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/cart/cart-model.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/cart/cart-collection.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/cart/cart-view.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/products/products-model.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/products/products-collection.js"></script>-->
+  <!--<script type="text/javascript" src="./src/js/products/products-view.js"></script>-->
+
+</head>
+
+<body>
+  <div class='main'>
+    <div class='menu-block'>
+      <div class='menu-full'>
+        <a href='about.html'>О нас</a>
+        <a href='gallery.html'>Галерея</a>
+      </div>
+      <div>
+        <a href='index.html'>  <img id='img-logo' src='./src/images/logo.png' /></a>
+      </div>
+      <div class='menu-full'>
+        <a href='shop.html'>Магазин</a>
+        <a href='cart.html'>Корзина</a>
+      </div>
+
+      <div class='mobile-menu'>
+        <input id='hamburger' class='hamburger' type="checkbox" />
+        <label for='hamburger' class='hamburger'>
+          <i></i>
+          <text>
+          </text>
+        </label>
+
+        <selection class='menu-list'>
+          <li>
+            <a href='about.html'>О нас</a>
+          </li>
+          <li>
+            <a href='gallery.html'>Галерея</a>
+          </li>
+          <li>
+            <a href='shop.html'>Магазин</a>
+          </li>
+          <li>
+            <a href='cart.html'>Корзина</a>
+          </li>
+        </selection>
+      </div>
+    </div>
+
+    <p class="header">
+      Магазин
+    </p>
+
+    <div id='content'>
+      <div class='filter'>
+        <p class='heading'>
+          Фильтр
+        </p>
+        <input type="checkbox" id="bouquet" />
+        <label for='bouquet'><span>букеты</span></label><br />
+
+        <input type="checkbox" id="for-brides" />
+        <label for='for-brides'><span>букеты для невест</span></label><br />
+
+        <input type="checkbox" id="box" />
+        <label for='box'><span>букеты в коробке</span></label><br />
+
+        <input type="checkbox" id="decor" />
+        <label for='decor'><span>цветочный декор</span></label>
+      </div>
+
+      <div class='flex-container' id='flex-container'>
+        <script type='text/template' id='product-id'>
+          <img src=./src/images/<%=src%> />
+          <p class='product-name'>
+            <%= name %>
+          </p>
+          <p class='price-popular'>
+            <%= price %> руб.
+          </p>
+          <button class='popular-buy'>Купить</button>
+        </script>
+      </div>
+    </div>
+
+    <footer>
+      <div class="contacts">
+        <p>
+          г. Минск, ул. Корш-Саблина д.5
+        </p>
+        <p>
+          +375 17 241-10-91 <br /> +375 44 517-05-02
+        </p>
+        <div class="social-icons">
+          <a class="a-icons" href="#"><img src="./src/images/facebook.png" /></a>
+          <a class="a-icons" href="#"><img src="./src/images/twitter.png" /></a>
+          <a class="a-icons" href="#"><img src="./src/images/instagram.png" /></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>

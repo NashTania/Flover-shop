@@ -8,7 +8,7 @@
    output: {
      filename: '[name].bundle.js',
      path: path.resolve(__dirname, './dist'),
-     publicPath: './src/'
+     publicPath: './dist'
    }
 
  });

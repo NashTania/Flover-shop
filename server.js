@@ -1,19 +1,16 @@
 const express = require('express');
 const webpack = require('webpack');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-
 const app = express();
-const config = require('./webpack.prod.js');
-const compiler = webpack(config);
+const http = require('http').Server(app);
 
-// Tell express to use the webpack-dev-middleware and use the webpack.config.js
-// configuration file as a base.
-app.use(webpackDevMiddleware(compiler, {
-  publicPath: config.output.publicPath
-})),
+app.get('/', function(req, res){
+  res.sendFile('/Users/tatiana/Studies/responsive/flovers/index.html');
+});
+
+//app.use( express.static('dist'));
+app.use('/', express.static(__dirname));
 
 
-// Serve the files on port 3000.
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!\n');
+http.listen(3000, function(){
+  console.log('listening on *:3000');
 });

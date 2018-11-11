@@ -3,14 +3,18 @@ const $ = require("jquery");
 const webpack = require('webpack');
 const _ = require('underscore');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const LiveReloadPlugin = require('webpack-livereload-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/script.js',
-  devServer: {
-    contentBase: './dev'
-    //inline:true,
-    //port: 8080
-  },
+/*  devServer: {
+    contentBase: './dev',
+    hot: true
+  //  inline:true,
+  //  port: 8080
+},*/
+  //watch: true,
   module: {
     rules: [
       {
@@ -64,7 +68,10 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery"}),
     new webpack.ProvidePlugin({_: 'underscore'}),
-    new ExtractTextPlugin({filename: './css/style.bundle.css', allChunks: true})
+    new ExtractTextPlugin({filename: './css/style.bundle.css', allChunks: true}),
+    new LiveReloadPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ]
 
 }

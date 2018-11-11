@@ -4,11 +4,18 @@ const path = require('path');
 const $ = require("jquery");
 
 module.exports = merge(common, {
+  watch: true,
+  devServer: {
+    contentBase: path.join(__dirname, '/'),
+    hot: true,
+    inline:true,
+    port: 8080
+  },
   mode: 'development',
   devtool: 'source-map',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, './dev')
+    publicPath: 'dist'
   },
   module: {
     rules: [

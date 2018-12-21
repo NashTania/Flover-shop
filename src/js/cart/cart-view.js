@@ -63,7 +63,6 @@ class CartListView extends Backbone.View {
 
   renderSum() {
     let total = this.getTotalSum();
-    //$('#total').empty();
     $('#total').html('Итого: ' + total + ' руб.')
   }
 

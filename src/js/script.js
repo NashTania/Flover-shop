@@ -1,11 +1,3 @@
-//tatiana_tkachenko_FD2_flover_shop_products'
-//https://fe.it-academy.by/AjaxStringStorage2.php
-/*$(document).ready(function() {
-  $('#order-button').click(function() {
-    sendRequest('tatiana_tkachenko_FD2_flover_shop_cart', cartProducts)
-    console.log('send')
-  })
-})*/
 import $ from 'jquery';
 import Backbone from 'backbone';
 import Underscore from 'underscore';

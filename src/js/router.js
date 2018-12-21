@@ -19,17 +19,7 @@ class Router extends Backbone.Router {
       }
     Backbone.Router.apply(this);
 }
-/*routes() {
-  return {
-  '': 'main',
-  'main': 'main',
-  'about': 'about',
-  'gallery': 'gallery',
-  'shop': 'shop',
-  'cart': 'cart',
-  'add-products': 'addProducts'
-  }
-}*/
+
   main() {
     let mainView = new PageView();
     mainView.render('./src/js/common/main-page.html')

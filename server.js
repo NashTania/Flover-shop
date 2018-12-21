@@ -7,7 +7,6 @@ app.get('/', function(req, res){
   res.sendFile('/Users/tatiana/Studies/responsive/flovers/index.html');
 });
 
-//app.use( express.static('dist'));
 app.use('/', express.static(__dirname));
 
 

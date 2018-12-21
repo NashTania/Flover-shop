@@ -1,6 +1,4 @@
-
 let _templateCache = {}
-
 
 class AbstractView extends Backbone.View {
   constructor(options) {
@@ -23,7 +21,6 @@ class AbstractView extends Backbone.View {
       resolve(_templateCache[tmp])
     })
   }
-
 }
 
 export default AbstractView;

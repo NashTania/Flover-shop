@@ -16,7 +16,6 @@ class AbstractCollection extends Backbone.Collection {
         n: key
       }),
       success:(data) => {
-      console.log(this._data)
         if (data.result) {
           Backbone.sync('create', this,{
             data: $.param({
@@ -25,7 +24,6 @@ class AbstractCollection extends Backbone.Collection {
               p: '111'
             }),
             success:() => {
-              console.log('2');
               Backbone.sync('create', this, {
                 data: $.param({
                   f: 'UPDATE',
@@ -42,10 +40,7 @@ class AbstractCollection extends Backbone.Collection {
               f: 'INSERT',
               n: key,
               v: JSON.stringify(value)
-            }),
-            success: () => {
-              console.log('3');
-            }
+            })
           })
         }
       }
@@ -64,7 +59,6 @@ class AbstractCollection extends Backbone.Collection {
   }
 
   getUserId() {
-    //localStorage.clear('tatiana_tkachenko_FD2_flover_cart_products')
     let userId = localStorage.getItem('tatiana_tkachenko_FD2_flover_cart_products');
     if (!userId) {
       userId = this.makeId();
